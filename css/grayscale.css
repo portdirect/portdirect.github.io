@@ -117,6 +117,7 @@ a:focus {
 
 @media(min-width:768px) {
     .navbar-custom {
+        padding: 20px 0;
         border-bottom: 0;
         background: 0 0;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -126,6 +127,7 @@ a:focus {
 
     .navbar-custom.top-nav-collapse {
         padding: 0;
+        background: #000;
     }
 }
 
