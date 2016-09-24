@@ -1,65 +1,87 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Pete Birley">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="" name="description">
+    <meta content="Pete Birley" name="author">
 
-    <title>port.direct</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="css/patternfly.min.css" >
-    <link rel="stylesheet" href="css/patternfly-additions.min.css" >
-
-
-    <!-- Custom CSS -->
-    <link href="css/grayscale.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <title>port.direct</title><!-- Bootstrap Core CSS -->
+    <link href="css/patternfly.min.css" rel="stylesheet">
+    <link href="css/patternfly-additions.min.css" rel="stylesheet"><!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet"><!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"><!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" class="cards-pf">
-
+<body class="cards-pf" data-spy="scroll" data-target=".navbar-fixed-top" id="page-top">
     <!-- Navigation -->
+
+
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa fa-anchor"></i> port.<span class="light">direct</span>
-                </a>
+                <button class="navbar-toggle" data-target=".navbar-main-collapse" data-toggle="collapse" type="button"><i class="fa fa-bars"></i></button> <a class="navbar-brand page-scroll" href="#page-top"><i class="fa fa-anchor"></i> port.<span class="light">direct</span></a>
             </div>
-
             <!-- Collect the nav links, forms, and other content for toggling -->
+
+
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+
+
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
+
+
                     <li>
-                        <a class="nav-item-iconic fa fa-info page-scroll" href="#about"></a>
+                        <a class="nav-item-iconic pficon pficon-server page-scroll" href="#compute"></a>
                     </li>
+
+
                     <li>
-                        <a class="nav-item-iconic fa fa-lock page-scroll" href="#download"></a>
+                        <a class="nav-item-iconic pficon pficon-network page-scroll" href="#network"></a>
                     </li>
+
+
+                    <li>
+                        <a class="nav-item-iconic pficon pficon-cloud-security page-scroll" href="#security"></a>
+                    </li>
+
+
+                    <li>
+                        <a class="nav-item-iconic pficon pficon-enterprise page-scroll" href="#enterprise"></a>
+                    </li>
+
+
+                    <li>
+                        <a class="nav-item-iconic pficon pficon-topology page-scroll" href="#orchestration"></a>
+                    </li>
+
+
+                    <li>
+                        <a class="nav-item-iconic fa fa-ship page-scroll" href="#logistics"></a>
+                    </li>
+
+
+                    <li>
+                        <a class="nav-item-iconic pficon pficon-info page-scroll" href="#services"></a>
+                    </li>
+
+
+                    <li>
+                        <a class="nav-item-iconic fa fa-github-alt page-scroll" href="#software"></a>
+                    </li>
+
+
                     <li>
                         <a class="nav-item-iconic fa fa-mail page-scroll" href="#contact"></a>
                     </li>
@@ -69,81 +91,101 @@
         </div>
         <!-- /.container -->
     </nav>
-
     <!-- Intro Header -->
-    <header class="intro">
+
+
+    <header class="intro login-pf">
         <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading"><strong>port.</strong>direct</h1>
 
-
-                        <p class="intro-text">Clouds as a Service</p>
-                        <a class="btn btn-circle page-scroll" href="#about"><i class="fa fa-angle-double-down animated"></i></a>
-                    </div>
+            <div class="container login">
+                <div class="col-sm-12">
+                    <h1 class="brand-heading"><strong>Run anything</strong> | anywhere</h1>
                 </div>
+
+
+                <div class="col-sm-7 col-md-6 col-lg-5">
+                    <h1 class="brand"><strong>PORT.</strong>DIRECT</h1>
+
+
+                    <h1><strong>Χ</strong> as a Service</h1>
+                </div>
+                <!--/.col-*-->
+
+
+                <!--<div class="col-sm-5 col-md-6 col-lg-7">
+                    <button class="btn btn-splash btn-primary" type="button"><span class="animated">Register</span></button>
+                    <button class="btn btn-splash btn-primary" type="button"><span class="animated">Login</span></button>
+                </div>-->
+                <!--/.col-*-->
             </div>
         </div>
     </header>
+    <!-- Intro Header -->
 
 
-
-    <section class="container content-section lead" id="about">
-        <div class="row text-center">
+    <section class="jumbotron container content-section lead" id="services">
+        <div class="row">
             <div class="col-lg-12">
-                <h3><small>Cloud as a Service</small>
-                </h3>
-
-
-                <h2><strong>Run anything, anywhere</strong>
+                <h2 class="text-right"><small>Managed Services</small>
                 </h2>
+
+
+                <h1><strong>Professional Service</strong> personal delivery</h1>
             </div>
         </div>
 
 
         <div class="row">
             <div class="col-lg-12">
-                <p>Port.direct lets you access your data and applications; how you want, where you want, when you want and at the price you want; either on your
-                own hardware or any cloud provider, helping you to utilise computing resources more efficiently and effectively. With single sign on, rapid
-                deployment enterprise proven IaaS and PaaS platforms and simple yet powerful management, you can run your applications and store your data
-                anywhere. Letting you use the most appropriate solution for your needs; expand and contract with demand, and effortlessly migrate between
-                platforms. From data-centres, to offices, and the internet of things Port.direct, lets you get on with producing the great experiences your users
-                want without worrying about how to deliver it.</p>
+                <p class="text-right">We offer a truly technology agnostic consultancy service for a range of virtualisation and integration solutions, IaaS, SDN, and SaaS.</p>
             </div>
         </div>
 
 
         <div class="container-fluid container-cards-pf">
             <div class="row row-cards-pf">
-                <div class="col-xs-12 col-sm-6 col-md-6">
-                    <div class="card-pf">
-                        <div class="card-pf-heading">
-                            <h2 class="card-pf-title"><strong>Hardware</strong> <small>Servers / Workstations / IoT / X86 / ARM</small></h2>
+                <div class="panel-group" id="accordion-markup-support">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a data-parent="#accordion-markup-support" data-toggle="collapse" href="#collapseZero-support"><strong>Support</strong></a>
+                            </h4>
                         </div>
 
 
-                        <div class="card-pf-body">
-                            Simplify hardware management, remotely control every aspect of your infrastructure, no matter where it is, via a secure web portal.
-                            Port.direct reduces the time of deploying a production-ready Hybrid Cloud with SSO, OpenStack and Kubernetes, capable of integrating
-                            with existing identity management solutions using 100% encrypted data transfer from months to a few clicks.
+                        <div class="panel-collapse collapse in" id="collapseZero-support">
+                            <div class="panel-body">
+                                From transferring your existing applications to take advantage of lower costs and increased reliability or building a next generation solution from scratch. We can help with all aspects of cloud computing, Port.direct offers advice on the best solutions for your needs, whether or not we provide them.
+                            </div>
                         </div>
                     </div>
-                </div>
 
 
-                <div class="col-xs-12 col-sm-6 col-md-6">
-                    <div class="card-pf">
-                        <div class="card-pf-heading">
-                            <h2 class="card-pf-title"><strong>Public Cloud</strong> <small>AWS / AZURE / GCE and more!</small></h2>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a class="collapsed" data-parent="#accordion-markup-support" data-toggle="collapse" href="#collapseOne-support"><strong>Consultancy</strong></a>
+                            </h4>
                         </div>
 
 
-                        <div class="card-pf-body">
-                            Deploy and manage applications and workloads across multiple public-clouds. Either directly interacting with the providers API, or
-                            using a custom machine image, letting you build a private hybrid cloud, in minutes, spanning multiple providers, capable of dynamic
-                            scaling to meet demand, without reliance on proprietary API's enabling you to run and shift your workloads seamlessly as your needs
-                            change.
+                        <div class="panel-collapse collapse" id="collapseOne-support">
+                            <div class="panel-body">
+                                Whither your looking for advice on hosting architecture to software defined networking and accelerating your time to market. It doesn’t matter if you're developer looking to unlock the business value inherent in delivering software releases more quickly, and improving productivity and efficiency though automation or a System Administrator making significant time savings for developers, testers and operations. With significant experience in OpenStack, Docker, KVM, OpenVSwitch, Kubernetes and Federated Identity Management, we can help you get to where you want securely, quickly and economically.
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a class="collapsed" data-parent="#accordion-markup-support" data-toggle="collapse" href="#collapseTwo-support"><strong>Managed Services</strong></a>
+                            </h4>
+                        </div>
+
+
+                        <div class="panel-collapse collapse" id="collapseTwo-support">
+                            <div class="panel-body">
+                                From helping you plan and deploy an on premise cloud, to remotely managing and running your servers, or maintaining and supporting your infrastructure. We can provide you with absolute control over your data, while taking all the pain out of updating, patching, monitoring and securing your infrastructure.
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -153,340 +195,366 @@
     <!-- Features Section -->
 
 
-
-
-
-    <section class="container content-section lead" id="frameworks">
-        <div class="row text-center">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h3><small>Infrastructure &amp; Platform as a Service</small>
-                </h3>
-
-
-                <h2><strong>Develop Faster</strong>
+    <section class="jumbotron container content-section lead" id="logistics">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="text-right"><small>X as a Service</small>
                 </h2>
+
+
+                <h1><strong>App Delivery</strong> | Lifecycle Management</h1>
             </div>
         </div>
 
 
         <div class="row">
             <div class="col-lg-12">
-                <p>Port.direct makes it easy to run your appication on the most appropriate solution for your needs; and move between them seamlessly as they
-                change.</p>
+                <p>Port.direct provides the tools and services you need to access your data and applications, simply securely and on-demand, letting you unlock the true potential of your computing resources more efficiently and effectively. From a single docker container to complete environments and complex applications, you will be able to easily deploy and manage resources with a few clicks.
+
+          <p></p>
+The port.direct application engine allows service providers, manufacturers and businesses to connect with partners and customers securely and simply making it easy to buy, sell, and share services from storage and compute to applications and orchestration templates.
+</p>
+            </div>
+        </div>
+    </section>
+    <!-- Features Section -->
+
+
+    <section class="jumbotron container content-section lead" id="orchestration">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="text-right"><small>Orchestration as a Service</small>
+                </h2>
+
+
+                <h1><strong>Software Defined</strong> | Control Freak</h1>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Port.direct lets you automate everything, without being locked into to any single system. Providing support for the latest tools, leading open-source automation and orchestration tools naively, and extensible to support both emerging solutions and legacy systems. Port.direct can support support any API, or Infrastructure Architecture, enabling the life cycle management of everything from development environments to servers, networking and IoT devices. This frees you to define what you want your apps and infrastructure to look like and share, test and enforce the changes you want to make across your infrastructure. Simultaneously it provides the advanced monitoring and reporting, you need to make decisions, optimize resource usage and prove compliance, at any scale.</p>
+            </div>
+        </div>
+
+
+        <div class="panel-group" id="accordion-markup-controll">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title"><a data-parent="#accordion-markup-controll" data-toggle="collapse" href="#collapseZeroControll"><strong>Heat</strong> <small>by the OpenStack Foundation</small></a>
+                    </h4>
+                </div>
+
+
+                <div class="panel-collapse collapse in" id="collapseZeroControll">
+                    <div class="panel-body">
+                        An orchestration system for describing a cloud application by executing appropriate API calls to generate running applications. Compatible with AWS Cloudformation, and OpenStack APIs, a Heat template describes the infrastructure for a cloud application in text files which are readable and writable by humans, and can be managed by version control tools. Templates specify the relationships between resources (e.g. this volume is connected to this server). This enables Heat to call out to the OpenStack APIs to create all of your infrastructure in the correct order to completely launch your application. The software integrates other components of OpenStack. The templates allow creation of most OpenStack resource types (such as instances, floating IPs, volumes, security groups, users, etc), as well as some more advanced functionality such as instance high availability, instance auto-scaling, and nested stacks.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title"><a class="collapsed" data-parent="#accordion-markup-controll" data-toggle="collapse" href="#collapseFourControll"><strong>Kubernetes</strong> <small>by Google</small></a>
+                    </h4>
+                </div>
+
+
+                <div class="panel-collapse collapse" id="collapseFourControll">
+                    <div class="panel-body">
+                        An open source container cluster manager initially developed by Google, benefitting from their experience of running containers at massive scale. The project is owned and powered by a diverse set of contributors, and is part of the Linux Foundations Cloud Native Computing Foundation. Kubernetes is an open source orchestration system for containers, handling scheduling of applications onto nodes in a compute cluster and actively managing workloads to ensure that their state matches the users’ desires. It provides a simple and resilient “platform for automating deployment, scaling, and operations of application containers across clusters of hosts”.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title"><a class="collapsed" data-parent="#accordion-markup-controll" data-toggle="collapse" href="#collapseTwoControll"><strong>Docker Swarm &amp; Compose</strong> <small>by Docker INC</small></a>
+                    </h4>
+                </div>
+
+
+                <div class="panel-collapse collapse" id="collapseTwoControll">
+                    <div class="panel-body">
+                        Distributed applications consist of many small applications that work together. Docker transforms these applications into individual containers. Swarm provides native clustering for Docker, turning a pool of hosts into a single, virtual Docker host. Instead of having to build, run and manage each individual container, Docker Compose allows you to define your multi-container application with all of its dependencies in a single file, then spin your application up in a single command.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title"><a class="collapsed" data-parent="#accordion-markup-controll" data-toggle="collapse" href="#collapseThreeControll"><strong>Ansible</strong> <small>by Red Hat</small></a>
+                    </h4>
+                </div>
+
+
+                <div class="panel-collapse collapse" id="collapseThreeControll">
+                    <div class="panel-body">
+                        A radically simple IT automation engine that automates cloud provisioning, configuration management, application deployment, intra-service orchestration, and many other IT needs. Without agents or custom security infrastructure, it's easy to deploy using a very simple language that allow you to describe your automation jobs in a way that approaches plain English.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title"><a class="collapsed" data-parent="#accordion-markup-controll" data-toggle="collapse" href="#collapseSixControll"><strong>Salt Open</strong> <small>by SaltStack</small></a>
+                    </h4>
+                </div>
+
+
+                <div class="panel-collapse collapse" id="collapseSixControll">
+                    <div class="panel-body">
+                        Salt Open is created and maintaind by SaltStack for complex systems management at scale. From one to tens of thousands of servers, and fast enough to communicate with them in seconds. Salt is a new approach to infrastructure management built on a dynamic communication bus. Salt can be used for data-driven orchestration, remote execution for any infrastructure, configuration management for any application stack, and much more.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title"><a class="collapsed" data-parent="#accordion-markup-controll" data-toggle="collapse" href="#collapseOneControll"><strong>Mesos</strong> <small>by the Apache Software Foundation</small></a>
+                    </h4>
+                </div>
+
+
+                <div class="panel-collapse collapse" id="collapseOneControll">
+                    <div class="panel-body">
+                        Built at UC Berkeley. Mesos was designed for operations at very large scale. Tested and refined by Twitter, Apple’s Siri, and Airbnb, and now supporting some of the largest applications in the world, Mesos supports different types of workloads to build truly modern applications. These distributed workloads include container orchestration (Mesos containers, Docker, and K8s), analytics (Spark), big-data technologies (Kafka, Cassandra) and much more.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Features Section -->
+
+
+    <section class="jumbotron container content-section lead" id="network">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="text-right"><small>Software Defined Networking</small>
+                </h2>
+
+
+                <h1><strong>Effortless Connections</strong> | robust links</h1>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="">Port.direct makes it easy to manage and provision resources. It gives you an view of the entire network, accelerating service delivery and providing agility in provisioning both virtual and physical network devices from a central location. Port.direct's unified networking platform offers significant performance, security and flexibility advantages with advanced load balancing capabilities, quality of service, DNS, endpoint security rules and L3 routing. Powered by Openstack Neutron and OVN, from the OpenvSwitch project, Port.direct makes it easy to deploy everything from simple L2 networks to incredibly complex topologies; blending and connecting Kubernetes, Docker Swarm, VM's and physical devices seamlessly.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Features Section -->
+
+
+    <section class="jumbotron container content-section lead" id="security">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="text-right"><small>Identity Federation</small>
+                </h2>
+
+
+                <h1><span><strong>powerful security</strong> | systemically applied</span>
+                </h1>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="">
+
+
+                  Port.direct's security model, works by treating every application, node and endpoint as though it sat at the very edge of your network. By moving the security perimeter to surround each component within your system, and allowing you to quickly and easily secure individual devices, containers and applications, rather than the just the edges of your network, you can both significantly increase the strength of your system to attack, accidental data exposure, while gaining valuable insight into the exposure and interactions of your systems. Powerful API driven access control, identity federation, authentication and authorization makes taking a holistic approach to your data’s security and integrity effortless, allowing you to concentrated on processing data, and delivering experiences to your customers, without fear of exposure.
+</p><p>
+Port.Direct powerful identity management platform, allows you to authenticate and authorize users and services across different platforms and systems without having to create separate accounts for each one. By providing Single Sign on, with both Role and Host based access controls and supporting a range of Federation protocols (including Security Assertion Markup Language, Open-ID, Open-ID Connect, and Oauth 2.0 in addition to OpenStack Keystone inter-cloud Federation) allows you securely connect virtually any web enabled application or service. LDAP and Kerberos provide support enable support for legacy applications, Microsoft Active Directory and application specific security requirements.
+
+<p>
+
+            </div>
+        </div>
+    </section>
+    <!-- Features Section -->
+
+
+    <section class="jumbotron container content-section lead" id="enterprise">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="text-right"><small>Cloud Platform</small>
+                </h2>
+
+
+                <h1><strong>ENTERPRISE Stability</strong> | Startup Agility</h1>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="">Harbor, the cloud platform from Port.Direct is built from the ground up for running containers, blending the two leading cloud platforms; OpenStack and Kubernetes. Providing an infinitely scalable, distributed, secure and robust foundation for development and operations.</p>
             </div>
         </div>
 
 
         <div class="container-fluid container-cards-pf">
             <div class="row row-cards-pf">
-                <div class="col-xs-12 col-sm-6 col-md-6">
-                    <div class="card-pf">
-                        <div class="card-pf-heading">
-                            <h2 class="card-pf-title"><strong>Openstack</strong> <small>by the OpenStack Foundation</small></h2>
+                <div class="panel-group" id="accordion-markup">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a class="collapsed" data-parent="#accordion-markup" data-toggle="collapse" href="#collapseNeg1"><strong>Harbor</strong> <small>by Port.Direct</small></a>
+                            </h4>
                         </div>
 
 
-                        <div class="card-pf-body">
-                            The industry standard open source platform for cloud computing. Originally founded in 2010 by Rackspace and NASA as a collection of
-                            software projects to develop and manage cloud infrastructure in a data center, it enables Infrastructure as a service (IAAS). OpenStack
-                            can provide an open and flexible vendor agnostic framework that many large enterprises have adopted as the underlying technology to
-                            drive transformation to software-defined infrastructure and support their business operations. Users cite significant competitive
-                            advantage from OpenStack with dramatically reduced provisioning times from weeks or months to minutes, and freedom from being locked in
-                            to proprietary systems.
+                        <div class="panel-collapse collapse" id="collapseNeg1">
+                            <div class="panel-body">
+The core of the Harbor Platform, is an enterprise grade Linux distribution, with a CentOS 7.2 user-land, and the upstream LTS Linux Kernel. Utilizing the OSTree packaging and update system, allows for 'Atomic' updates without risk of incompatibility and the ability roll back to a previous known state, eliminating the cost, hassle and loss of continuity from complex and unpredictable updates. Making extensive use of Kubernetes, Docker, FreeIPA and Systemd, the Marina Cloud Management Suite from Port.Direct makes management, troubleshooting and support simple, while the 'edgeless' approach to networking and security make forming massively distributed repurposeable clusters a credible option for organizations no matter what their scale.
+                            </div>
                         </div>
                     </div>
-                </div>
 
 
-                <div class="col-xs-12 col-sm-6 col-md-6">
-                    <div class="card-pf">
-                        <div class="card-pf-heading">
-                            <h2 class="card-pf-title"><strong>Kubernetes</strong> <small>by Google</small></h2>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a data-parent="#accordion-markup" data-toggle="collapse" href="#collapseZero"><strong>Openstack</strong> <small>by the OpenStack Foundation</small></a>
+                            </h4>
                         </div>
 
 
-                        <div class="card-pf-body">
-                            An open source container cluster manager initially developed by Google, benefitting from their experience of running containers at
-                            massive scale. The project is owned and powered by a diverse set of contributors, and is part of the Linux Foundations Cloud Native
-                            Computing Foundation. Kubernetes is an open source orchestration system for containers, handling scheduling of applications onto nodes
-                            in a compute cluster and actively managing workloads to ensure that their state matches the users’ desires. It provides a simple and
-                            resilient “platform for automating deployment, scaling, and operations of application containers across clusters of hosts”.
+                        <div class="panel-collapse collapse in" id="collapseZero">
+                            <div class="panel-body">
+Harbor uses OpenStack, industry standard open source platform for cloud computing, extensivly to provide vendor agnostic storage, networking, hypervisor support, orchestration and end user facing API's. Originally founded in 2010 by NASA and Rackspace as a collection of software projects to develop and manage cloud infrastructure in a data center. OpenStack provides an open and flexible vendor agnostic framework that many large enterprises have attempted to adopt as the underlying technology to drive thier transformation to software-defined infrastructure and support their business operations. Those that have succeeded cite significant competitive advantages from OpenStack with dramatically reduced provisioning times from weeks or months to minutes, and freedom from being locked in to proprietary systems.
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
 
 
-            <div class="row row-cards-pf">
-                <div class="col-xs-12 col-sm-6 col-md-6">
-                    <div class="card-pf">
-                        <div class="card-pf-heading">
-                            <h2 class="card-pf-title"><strong>Mesos</strong> <small>by the Apache Software Foundation</small></h2>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a class="collapsed" data-parent="#accordion-markup" data-toggle="collapse" href="#collapseOne"><strong>Kubernetes</strong> <small>by Google</small></a>
+                            </h4>
                         </div>
 
 
-                        <div class="card-pf-body">
-                            <p>Built at UC Berkeley. Mesos was designed for operations at very large scale. Tested and refined by Twitter, Apple’s Siri, and
-                            Airbnb, and now supporting some of the largest applications in the world, Mesos supports different types of workloads to build truly
-                            modern applications. These distributed workloads include container orchestration (Mesos containers, Docker, and K8s), analytics
-                            (Spark), big-data technologies (Kafka, Cassandra) and much more.</p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-xs-12 col-sm-6 col-md-6">
-                    <div class="card-pf">
-                        <div class="card-pf-heading">
-                            <h2 class="card-pf-title"><strong>Docker Swarm</strong> <small>by Docker INC</small></h2>
+                        <div class="panel-collapse collapse" id="collapseOne">
+                            <div class="panel-body">
+Harbor uses Kubernetes as the foundation for it the highly available, scalable and flexible architecture. Port.Direct has enhanced the standard Kubernetes feature set by adding support for direct OpenStack Cinder Storage attachment, enabling containers to securely access the data they need from anywhere and provide support for a huge number of proprietary and dedicated storage solutions from hardware vendors including EMC, NetAPP, Fujitsu, and Pure Storage. Networking has been extensively reworked from the simple overlay-networks or routing methodologies offered by Flannel, and Calico to make the most of the advantages that OpenStack Neutron can bring. These include multi-tenant operation, compatibility with other platforms, advanced routing and the replacement of the "Kube Proxy" with an implementation of HA-proxy, improving throughput control and distribution of workloads. These enhancements both significantly improve the viability of Kubernetes as a solution for managing containers on bare-metal infrastructure as well as reducing reliance on public cloud providers offerings for storage and connectivity with the outside world.
+                            </div>
                         </div>
 
 
-                        <div class="card-pf-body">
-                            <p>Native clustering for Docker. It turns a pool of Docker hosts into a single, virtual Docker host. Because Docker Swarm serves the
-                            standard Docker API, any tool that already communicates with a Docker daemon can use Swarm to transparently scale to multiple
-                            hosts.</p>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"><a class="collapsed" data-parent="#accordion-markup-network" data-toggle="collapse" href="#collapseOne-network"><strong>OVN</strong> <small>Open Virtual Network for Open vSwitch</small></a>
+                                </h4>
+                            </div>
+
+
+                            <div class="panel-collapse collapse" id="collapseOne-network">
+                                <div class="panel-body">
+                                    Harbor uses OVN, to provide networking, putting users in control over their cloud network resources. This allows users to connect groups of VMs or containers into private L2 and L3 networks, quickly, programmatically, and without the need to provision VLANs or other physical network resources. OVN provides native support for logical switches and routers, security groups, and L2/L3/L4 ACLs, implemented using OpenFlow on top of a Geneve tunnel-based overlay network. Harbor is sufficiently robust and scalable to support large production deployments, and supporting the same virtual machine environments as Open vSwitch, including KVM, Xen, and Hyper-V in addition to both software and hardware gateways.
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"><a class="collapsed" data-parent="#accordion-markup" data-toggle="collapse" href="#collapseTwo"><strong>FreeIPA</strong></a>
+                                </h4>
+                            </div>
+
+
+                            <div class="panel-collapse collapse" id="collapseTwo">
+                                <div class="panel-body">
+                                    Harbor incorporates  FreeIPA, a project by RedHat and Fedora, for securing networked environments combining MIT Kerberos, NTP, DNS, and the Dogtag certificate system. This provides industry proven authentication, authorization and access controll for users, groups, hosts putting you in controll of the security aspects of a network of computers via a powerful web interface and simple command-line administration tools.
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Features Section -->
 
 
-    <section class="container content-section lead" id="features">
-        <div class="row text-center">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h3><small>Orchestration as a Service</small>
-                </h3>
-
-
-                <h2><strong>Continuously Deliver</strong>
+    <section class="jumbotron container content-section lead" id="software">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="text-right"><small>Software</small>
                 </h2>
+
+
+                <h1><strong>Open Standards</strong> | Open Source</h1>
             </div>
         </div>
 
 
         <div class="row">
             <div class="col-lg-12">
-                <p>Port.direct makes it easy to automate everything, without locking you into a tool-set or service. Supporting the leading open-source automation
-                and orchestration tools natively, and extendible to support any API, development environments can be created in seconds and transitioned seamlessly
-                into production.</p>
+                <p class="">Harbor, the open-source cloud platform from Port.Dirct, simplifies computing management, remotely controling every aspect of your infrastructure, no matter where it is, via a secure web portal. Reducing the time and cost of deploying a production-ready Hybrid Cloud with SSO, OpenStack and Kubernetes, capable of integrating with existing identity management solutions using 100% encrypted data transfer from months to a few clicks.</p>
             </div>
         </div>
 
 
         <div class="container-fluid container-cards-pf">
             <div class="row row-cards-pf">
-                <div class="col-xs-12 col-sm-6 col-md-6">
-                    <div class="card-pf">
-                        <div class="card-pf-heading">
-                            <h2 class="card-pf-title"><strong>Ansible</strong> <small>by Red Hat</small></h2>
+                <div class="panel-group" id="accordion-markup-software">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a data-parent="#accordion-markup-support" data-toggle="collapse" href="#collapseZero-software"><strong>Self Hosted</strong> <small>On Premise</small></a>
+                            </h4>
                         </div>
 
 
-                        <div class="card-pf-body">
-                            <p>A radically simple IT automation engine that automates cloud provisioning, configuration management, application deployment,
-                            intra-service orchestration, and many other IT needs. Being designed for multi-tier deployments since day one, modeling your IT
-                            infrastructure by describing how all of your systems inter-relate, rather than just managing one system at a time. Without agents or
-                            custom security infrastructure, it's easy to deploy using a very simple language that allow you to describe your automation jobs in a
-                            way that approaches plain English.</p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-xs-12 col-sm-6 col-md-6">
-                    <div class="card-pf">
-                        <div class="card-pf-heading">
-                            <h2 class="card-pf-title"><strong>Puppet</strong> <small>by Puppet Labs</small></h2>
-                        </div>
-
-
-                        <div class="card-pf-body">
-                            <p>Puppet provides a standard way of delivering and operating software, no matter where it runs. With the Puppet approach, you define
-                            what you want your apps and infrastructure to look like using a common easy-to-read language. From there you can share, test and
-                            enforce the changes you want to make across your datacenter. And at every step of the way, you have the visibility and reporting you
-                            need to make decisions and prove compliance. The result: you get a standard way of automating all of it, at scale.</p>
+                        <div class="panel-collapse collapse in" id="collapseZero-software">
+                            <div class="panel-body">
+                                From a single node POC, to the largest of data-centers, HarborOS removes all the pain and cost tpicalically associated with Virtualisation Management Platforms. Based on CentOS 7.2, HarborOS supports a wide range of hardware, and is capable of intergrating with and managing existing VMWare, Citrix and Microsoft solutions.
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
 
 
-            <div class="row row-cards-pf">
-                <div class="col-xs-12 col-sm-6 col-md-6">
-                    <div class="card-pf">
-                        <div class="card-pf-heading">
-                            <h2 class="card-pf-title"><strong>Docker Compose</strong> <small>by Docker INC</small></h2>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a class="collapsed" data-parent="#accordion-markup-software" data-toggle="collapse" href="#collapseOne-software"><strong>Cloud</strong> <small>SAML2 / Keystone</small></a>
+                            </h4>
                         </div>
 
 
-                        <div class="card-pf-body">
-                            <p>Distributed applications consist of many small applications that work together. Docker transforms these applications into individual
-                            containers that are linked together. Instead of having to build, run and manage each individual container, Docker Compose allows you to
-                            define your multi-container application with all of its dependencies in a single file, then spin your application up in a single
-                            command. Your application’s structure and configuration are held in a single place, which makes spinning up applications simple and
-                            repeatable everywhere.</p>
+                        <div class="panel-collapse collapse" id="collapseOne-software">
+                            <div class="panel-body">
+                                Machine Images are avalible for AWS, Azure and Google Cloud Engine. Letting you build a hybrid cloud, in minutes, spanning multiple providers, capable of dynamic scaling to meet demand, without reliance on proprietary API's enabling you to run and shift your workloads seamlessly as your needs change. Images for other cloud providers avalible on request.
+                            </div>
                         </div>
                     </div>
-                </div>
 
 
-                <div class="col-xs-12 col-sm-6 col-md-6">
-                    <div class="card-pf">
-                        <div class="card-pf-heading">
-                            <h2 class="card-pf-title"><strong>Salt Open</strong> <small>by SaltStack</small></h2>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a class="collapsed" data-parent="#accordion-markup-software" data-toggle="collapse" href="#collapseTwo-software"><strong>Developers</strong> <small>github</small></a>
+                            </h4>
                         </div>
 
 
-                        <div class="card-pf-body">
-                            <p>Salt Open is created and maintaind by SaltStack for complex systems management at scale. From one to tens of thousands of servers,
-                            and fast enough to communicate with them in seconds. Salt is a new approach to infrastructure management built on a dynamic
-                            communication bus. Salt can be used for data-driven orchestration, remote execution for any infrastructure, configuration management
-                            for any application stack, and much more.</p>
+                        <div class="panel-collapse collapse" id="collapseTwo-software">
+                            <div class="panel-body">
+                                The code for HarborOS is licenced either under the Apache 2.0 Licence or European Union Public Licence. All source code is hosted a the port.direct github reposiorites. Builds for the 'latest' branch are performed hourly and automaticlly pushed to the docker hub for disctribuition, while 'stable' builds are produced weekly.
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- About Section -->
-
-
-    <section class="container content-section lead" id="features">
-        <div class="row text-center">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h3><small>Software &amp; Identity as a Service</small>
-                </h3>
-
-
-                <h2><strong>Service Marketplace</strong>
-                </h2>
-            </div>
-        </div>
-
-
-        <div class="row">
-            <div class="col-lg-12">
-                <p></p>
-            </div>
-        </div>
-
-
-        <div class="container-fluid container-cards-pf">
-            <div class="row row-cards-pf">
-                <div class="col-xs-12 col-sm-6 col-md-6">
-                    <div class="card-pf">
-                        <div class="card-pf-heading">
-                            <h2 class="card-pf-title"><strong>App Store</strong> <small>MURANO / HEAT</small></h2>
-                        </div>
-
-
-                        <div class="card-pf-body">
-                            Port.direct offers the first cloud native application store, allowing you to easily deploy and manage applications with a few clicks. From VDI and Word, to Word-press or the largest and most complex web-scale applications, access the tools and services you need simply, securely and on-demand.
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-xs-12 col-sm-6 col-md-6">
-                    <div class="card-pf">
-                        <div class="card-pf-heading">
-                            <h2 class="card-pf-title"><strong>Cloud Federation</strong> <small>SAML2 / Keystone</small></h2>
-                        </div>
-
-
-                        <div class="card-pf-body">
-                            Port.direct allows service providers, manufacturers and businesses to connect with partners and customers securely and simply. Powered by SAML2 and OpenStack Keystone Federation (OpenID and Oauth 2.0 in development), with Ceilometer, Gnocchi and Grafana powered metering; port.direct makes it easy to buy and sell cloud services (e.g. Storage, Compute, Orchestration Templates) and applications.                       </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Download Section -->
-
-
-    <section class="content-section text-center lead" id="download">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Register For Beta Access</h2>
-
-
-                    <!-- <p>Port.direct is in beta, register below to get a preview of the next generation of cloud computing.</p>
-                    <a class="btn btn-primary btn-lg" href="//accounts.port.direct/">Register Now</a> -->
-                    <p>Port.direct is in beta, all of our current beta slots are currently full, but check back soon!</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- About Section -->
-
-
-    <section class="container content-section lead" id="features">
-        <div class="row text-center">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h3><small>Managed Services</small>
-                </h3>
-
-
-                <h2><strong>Support and Consultancy</strong>
-                </h2>
-            </div>
-        </div>
-
-
-        <div class="row">
-            <div class="col-lg-12">
-                <p>Offering truly technology agnostice consultancy service for an range of virtualisation and integration solutions, we can help with all aspects
-                of IaaS, SDN, and SaaS.</p>
-
-
-                <p>From advice on hosting architecture to software defined networking and accelerating your time to market. If your a developer looking to unlock
-                the business value inherent in delivering software releases more quickly, and improving productivity and efficiency though automation or a System
-                Administrator making significant time savings for developers, testers and operations. With signifigant experience in OpenStack, Docker, KVM,
-                OpenVSwitch, Kubernetes and Federated Identity Management, we can help you get to where you want securely, quickly and economicaly.</p>
-            </div>
-        </div>
-
-
-        <div class="row row-cards-pf">
-            <div class="col-xs-12 col-sm-6 col-md-6">
-                <div class="card-pf">
-                    <div class="card-pf-heading">
-                        <h2 class="card-pf-title"><strong>Cloud</strong>
-                        </h2>
-                    </div>
-
-
-                    <div class="card-pf-body">
-                        We can help with all aspects of cloud computing: from transferring your existing applications to take advantage of lower
-                        costs and increased reliability or build a next generation solution from scratch. Port.direct offers advice on the best solutions for your
-                        needs, whether or not we provide them.
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-xs-12 col-sm-6 col-md-6">
-                <div class="card-pf">
-                    <div class="card-pf-heading">
-                        <h2 class="card-pf-title"><strong>Managed Services</strong>
-                        </h2>
-                    </div>
-
-
-                    <div class="card-pf-body">
-                        From helping you plan and deploy an on premise cloud, to remotely runing your core API servers, or maintaing and support your
-                        infrastructure. and provide you with absolute control over your data, while taking all the pain out of updating, patching, monitoring and
-                        securing your infrastructure.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Contact Section -->
 
 
     <section class="container content-section text-center lead" id="contact">
@@ -495,53 +563,56 @@
                 <h2>Contact Port.direct</h2>
 
 
-                <p><a href="mailto:petebirley@gmail.com">pete@port.direct</a>
+                <p><a href="mailto:hello@port.direct">hello@port.direct</a>
                 </p>
 
 
                 <ul class="list-inline banner-social-buttons">
                     <li>
-                        <a class="btn btn-default btn-lg" href="https://github.com/portdirect"><i class="fa fa-github fa-fw"></i> <span class=
-                        "network-name">Github</span></a>
+                        <a class="btn btn-default btn-lg" href="https://github.com/portdirect"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
                     </li>
                 </ul>
             </div>
         </div>
     </section>
-
     <!-- Footer -->
+
+
     <footer>
         <div class="container text-center">
             <p>Copyright &copy; Port.direct 2016</p>
         </div>
     </footer>
-
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="js/jquery.js">
+    </script> <!-- Bootstrap Core JavaScript -->
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js">
+    </script> <!-- Plugin JavaScript -->
 
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.easing.min.js">
+    </script> <!-- Datatables, jQuery Grid Component -->
+     <!-- Note: jquery.dataTables.js must occur in the html source before patternfly*.js.-->
 
+    <script src="js/jquery.dataTables.min.js">
+    </script>
+    <script src="js/dataTables.colVis.js">
+    </script>
+    <script src="js/dataTables.colReorder.js">
+    </script> <!-- PatternFly Custom Componets -  Sidebar, Popovers and Datatables Customizations -->
+     <!-- Note: jquery.dataTables.js must occur in the html source before patternfly*.js.-->
 
-    <!-- Datatables, jQuery Grid Component -->
-    <!-- Note: jquery.dataTables.js must occur in the html source before patternfly*.js.-->
-    <script src="js/jquery.dataTables.min.js"></script>
-    <script src="js/dataTables.colVis.js"></script>
-    <script src="js/dataTables.colReorder.js"></script>
+    <script src="js/patternfly.js">
+    </script> <!-- Custom Theme JavaScript -->
 
-    <!-- PatternFly Custom Componets -  Sidebar, Popovers and Datatables Customizations -->
-    <!-- Note: jquery.dataTables.js must occur in the html source before patternfly*.js.-->
-    <script src="js/patternfly.js"></script>
-
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/grayscale.js"></script>
-
-    <script src="js/jquery.matchHeight.js"></script>
-
+    <script src="js/grayscale.js">
+    </script>
+    <script src="js/jquery.matchHeight.js">
+    </script>
+    <script>
+    $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
 </body>
-
 </html>
