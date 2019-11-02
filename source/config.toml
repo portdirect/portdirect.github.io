@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://port.direct/"
 languageCode = "en-us"
 title = "port.direct"
 theme = "pulp"
@@ -9,16 +9,15 @@ hasCJKLanguage = true
 # pygmentsUseClasses = true
 # googleAnalytics = "{your tracking code}"
 
-[taxonomies]
-  series = "series"
+# [taxonomies]
+#   series = "series"
 
 [params]
-    author = "Pete Birley"
-    avatar = "avatar.jpg"
+    author = "port.direct"
+    avatar = "avatar.png"
     favicon = "favicon.ico"
     description = """
-        Please write anything here.
-        Profiles, backgrounds, favorite things etc.
+        The internet junk draw; like geocities but with less under construction gifs.
     """
     publicationYear = "2019"
     # listPageDateFormat = "January, 2006" # See https://gohugo.io/functions/format/

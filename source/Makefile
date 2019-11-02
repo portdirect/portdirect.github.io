@@ -4,9 +4,9 @@ SHELL := /bin/bash
 
 build:
 	@echo "Building site"
-	cd ./source; hugo --destination ../
+	hugo --destination ../
 
 
 devel:
 	@echo "Running local development server"
-	cd ./source; hugo server --disableFastRender -D
+	hugo server --disableFastRender -D
