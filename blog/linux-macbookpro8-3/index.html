@@ -35,7 +35,7 @@
 
 <meta itemprop="datePublished" content="2019-11-01T15:13:39-05:00" />
 <meta itemprop="dateModified" content="2019-11-01T15:13:39-05:00" />
-<meta itemprop="wordCount" content="1108">
+<meta itemprop="wordCount" content="1222">
 
 
 
@@ -124,37 +124,20 @@ cat /var/lib/dkms/broadcom-wl/*/log/make.log
 <pre><code>$ sudo journalctl -f
 </code></pre>
 
-<pre><code>$ sudo lshw -c network
-  *-network                 
-       description: Ethernet interface
-       product: NetXtreme BCM57765 Gigabit Ethernet PCIe
-       vendor: Broadcom Inc. and subsidiaries
-       physical id: 0
-       bus info: pci@0000:02:00.0
-       logical name: enp2s0
-       version: 10
-       serial: &lt;REDACTED&gt;
-       capacity: 1Gbit/s
-       width: 64 bits
-       clock: 33MHz
-       capabilities: pm msi msix pciexpress bus_master cap_list ethernet physical tp 10bt 10bt-fd 100bt 100bt-fd 1000bt 1000bt-fd autonegotiation
-       configuration: autonegotiation=on broadcast=yes driver=tg3 driverversion=3.137 firmware=57765-v1.37 latency=0 link=no multicast=yes port=twisted pair
-       resources: irq:16 memory:b0400000-b040ffff memory:b0410000-b041ffff
-  *-network
-       description: Wireless interface
-       product: BCM4331 802.11a/b/g/n
-       vendor: Broadcom Inc. and subsidiaries
-       physical id: 0
-       bus info: pci@0000:03:00.0
-       logical name: wlp3s0
-       version: 02
-       serial: &lt;REDACTED&gt;
-       width: 64 bits
-       clock: 33MHz
-       capabilities: pm msi pciexpress bus_master cap_list ethernet physical wireless
-       configuration: broadcast=yes driver=wl0 driverversion=6.30.223.271 (r587334) ip=&lt;REDACTED&gt; latency=0 multicast=yes wireless=IEEE 802.11
-       resources: irq:17 memory:b0600000-b0603fff
+<p>Unfortunately I forgot to capture the output we were seeing here, so you&rsquo;ll need to take my word for it that <code>wpa_supplicant</code> was not looking terribly happy. A quick search later, and we end up at <a href="https://bugzilla.redhat.com/show_bug.cgi?id=1703745">Redhats bugzilla #1703745</a>. There is a <a href="https://copr.fedorainfracloud.org/coprs/dcaratti/wpa_supplicant/">copr repo</a> thanks to Davide Caratti, that includes a copy of <code>wpa_supplicant</code> built without <code>CONFIG_MESH</code> enabled. But <a href="https://bugzilla.redhat.com/show_bug.cgi?id=1703745#c56">further down</a> in this thread, there is a link to Nicolas Vieville&rsquo;s comment in a related bug with a simpler solution, which just disables MAC randomization whist scanning access points. As I don&rsquo;t tend to run Darknet Marketplaces from public libraries, this seems fine to me:</p>
+
+<pre><code class="language-bash">sudo tee /etc/NetworkManager/conf.d/broadcom_wl.conf &lt;&lt; 'EOF'
+[device]
+match-device=driver:wl
+wifi.scan-rand-mac-address=no
+EOF
 </code></pre>
+
+<p>To bring this mini-saga to a close, we might as well reboot now. Following this, we are finally up and running!</p>
+
+<h3 id="dual-displays">Dual displays</h3>
+
+<p>The MPB 8.3 has both on-board graphics, and an external AMD GPU. This machine tends to be desk-bound with an external monitor attached, so I&rsquo;m not too concerned with getting switching in place, and as a result the following is a bit crude. By default Wayland will see two &lsquo;internal&rsquo; displays, one for each GPU; I simply disable the 2nd via the gnome control panel. At this point an external displayport display works fine @2560x1440. That said I strongly recommend using the <a href="https://extensions.gnome.org/extension/921/multi-monitors-add-on/">Multi Monitors Add-On</a> which i have found essential to getting the most out of an Multi-Monitor setup with Gnome.</p>
 
   </div>
   <footer>
