@@ -28,3 +28,6 @@ devel:
 
 push:
 	@echo "pushing repo"
+	git add ../
+	git commit -s -m "$(shell date)"
+	git push
