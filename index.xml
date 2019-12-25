@@ -17,7 +17,7 @@
       <pubDate>Wed, 25 Dec 2019 00:14:02 +0000</pubDate>
       
       <guid>https://port.direct/blog/fedora-silverblue-workstation/</guid>
-      <description>Fedora Silverblue is pretty nice, but out of the box lacks some of the tools I tend to use. Though in many cases flatpak, or the Fedora Toolbox container, lets you deploy applications without effecting the underlying distrobution, a few things fall outside of their scope/capabilities. The following is how I get Chrome, VSCode, Cockpit, and also customise Gnome to my liking:
+      <description>Fedora Silverblue is pretty nice, but out of the box lacks some of the tools I tend to use. Though in many cases flatpak, or the Fedora Toolbox container, lets you deploy applications without effecting the underlying distrobution, a few things fall outside of their scope/capabilities. The following is how I install Chrome, VSCode, Cockpit, and also customise Gnome to my liking:
 Add additional repos Adding new rpm repos to rpm-ostree is pretty simple for layering new packages:</description>
     </item>
     
