@@ -24,25 +24,25 @@
   
 
   <meta property="og:title" content="Fedora Silverblue Workstation" />
-<meta property="og:description" content="Fedora Silverblue is pretty nice, but out of the box lacks some of the tools I tend to use. Though in many cases flatpak, or the Fedora Toolbox container, lets you deploy applications without effecting the underlying distrobution, a few things fall outside of their scope/capabilities. The following is how I install Chrome, VSCode, Cockpit, and also customise Gnome to my liking:
-Add additional repos Adding new rpm repos to rpm-ostree is pretty simple for layering new packages:" />
+<meta property="og:description" content="Fedora Silverblue is pretty lovely, but out of the box lacks some of the tools I tend to use. Though in many cases, flatpak, or the Fedora Toolbox container, lets you deploy applications without effecting the underlying distribution, a few things fall outside of their scope/capabilities. The following is how I install Chrome, VSCode, Cockpit, and also customize Gnome to my liking:
+Add additional repos Adding additional rpm repos to rpm-ostree is pretty simple if all we are doing is layering some new packages:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://port.direct/blog/fedora-silverblue-workstation/" />
 <meta property="article:published_time" content="2019-12-25T00:14:02+00:00" />
 <meta property="article:modified_time" content="2019-12-25T00:14:02+00:00" />
 <meta itemprop="name" content="Fedora Silverblue Workstation">
-<meta itemprop="description" content="Fedora Silverblue is pretty nice, but out of the box lacks some of the tools I tend to use. Though in many cases flatpak, or the Fedora Toolbox container, lets you deploy applications without effecting the underlying distrobution, a few things fall outside of their scope/capabilities. The following is how I install Chrome, VSCode, Cockpit, and also customise Gnome to my liking:
-Add additional repos Adding new rpm repos to rpm-ostree is pretty simple for layering new packages:">
+<meta itemprop="description" content="Fedora Silverblue is pretty lovely, but out of the box lacks some of the tools I tend to use. Though in many cases, flatpak, or the Fedora Toolbox container, lets you deploy applications without effecting the underlying distribution, a few things fall outside of their scope/capabilities. The following is how I install Chrome, VSCode, Cockpit, and also customize Gnome to my liking:
+Add additional repos Adding additional rpm repos to rpm-ostree is pretty simple if all we are doing is layering some new packages:">
 <meta itemprop="datePublished" content="2019-12-25T00:14:02&#43;00:00" />
 <meta itemprop="dateModified" content="2019-12-25T00:14:02&#43;00:00" />
-<meta itemprop="wordCount" content="569">
+<meta itemprop="wordCount" content="574">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Fedora Silverblue Workstation"/>
-<meta name="twitter:description" content="Fedora Silverblue is pretty nice, but out of the box lacks some of the tools I tend to use. Though in many cases flatpak, or the Fedora Toolbox container, lets you deploy applications without effecting the underlying distrobution, a few things fall outside of their scope/capabilities. The following is how I install Chrome, VSCode, Cockpit, and also customise Gnome to my liking:
-Add additional repos Adding new rpm repos to rpm-ostree is pretty simple for layering new packages:"/>
+<meta name="twitter:description" content="Fedora Silverblue is pretty lovely, but out of the box lacks some of the tools I tend to use. Though in many cases, flatpak, or the Fedora Toolbox container, lets you deploy applications without effecting the underlying distribution, a few things fall outside of their scope/capabilities. The following is how I install Chrome, VSCode, Cockpit, and also customize Gnome to my liking:
+Add additional repos Adding additional rpm repos to rpm-ostree is pretty simple if all we are doing is layering some new packages:"/>
 
   <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -73,9 +73,9 @@ Add additional repos Adding new rpm repos to rpm-ostree is pretty simple for lay
   <p class="date">December 25, 2019</p>
   
   <div id="contentBody">
-    <p>Fedora Silverblue is pretty nice, but out of the box lacks some of the tools I tend to use. Though in many cases flatpak, or the Fedora Toolbox container, lets you deploy applications without effecting the underlying distrobution, a few things fall outside of their scope/capabilities. The following is how I install Chrome, VSCode, Cockpit, and also customise Gnome to my liking:</p>
+    <p>Fedora Silverblue is pretty lovely, but out of the box lacks some of the tools I tend to use. Though in many cases, flatpak, or the Fedora Toolbox container, lets you deploy applications without effecting the underlying distribution, a few things fall outside of their scope/capabilities. The following is how I install Chrome, VSCode, Cockpit, and also customize Gnome to my liking:</p>
 <h3 id="add-additional-repos">Add additional repos</h3>
-<p>Adding new rpm repos to rpm-ostree is pretty simple for layering new packages:</p>
+<p>Adding additional rpm repos to rpm-ostree is pretty simple if all we are doing is layering some new packages:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo tee /etc/yum.repos.d/vscode.repo <span style="color:#e6db74">&lt;&lt; &#39;EOF&#39;
 </span><span style="color:#e6db74">[code]
 </span><span style="color:#e6db74">name=Visual Studio Code
@@ -109,7 +109,7 @@ sudo tee /etc/yum.repos.d/cockpit-preview.repo <span style="color:#e6db74">&lt;&
 </span><span style="color:#e6db74">enabled_metadata=1
 </span><span style="color:#e6db74">EOF</span>
 </code></pre></div><h3 id="install-packages">Install packages</h3>
-<p>Next we install the packages we need, and finish off with a reboot to allow us to to start with the new commit.</p>
+<p>Next, we install the packages we need and finish off with a reboot to allow us to start with the new commit.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">rpm-ostree install --idempotent <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>    gnome-tweak-tool <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>    gtk-murrine-engine <span style="color:#ae81ff">\
@@ -126,16 +126,16 @@ sudo tee /etc/yum.repos.d/cockpit-preview.repo <span style="color:#e6db74">&lt;&
 </span><span style="color:#ae81ff"></span>    google-chrome-stable <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>    make
 systemctl reboot
-</code></pre></div><p>Once we are back we can enable, and start, the cockpit webserver, and open the required ports:</p>
+</code></pre></div><p>Once we are back we can enable, and start, the cockpit web server, and open the required ports:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo systemctl enable --now cockpit.socket
 sudo firewall-cmd --add-service<span style="color:#f92672">=</span>cockpit
 sudo firewall-cmd --add-service<span style="color:#f92672">=</span>cockpit --permanent
 </code></pre></div><h3 id="theme-gnome">Theme Gnome</h3>
-<p>Ok, with the practicalities out of the way, lets get a pretty desktop picture that spans the two monitors I'm using:</p>
+<p>Ok, with the practicalities out of the way, let's get a pretty desktop picture that spans the two monitors I'm using:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">mkdir -p ~/Pictures/Wallpapers
 curl -sSL -o ~/Pictures/Wallpapers/yosemite.jpg https://binaryfortressdownloads.com/Download/WPF/Images/21505/WallpaperFusion-yosemite-5120x1440.jpg
-</code></pre></div><p>Then with Gnome Tweak Tool, we can set this to be the the wallpaper for both the desktop, and lock screen. You need to use Tweak Tool (or the cli command I keep forgetting) to do this, so you can set the image to span the monitors, rather than be scaled on each of them. While we are in Tweak Tool, we might was well clean up a few other things, first lets ditch the background logo extension, and kill virtually all the other fluff thats enabled by default.</p>
-<p>Once things are stipped back a bit, we can move onto more drastic changes to get us a tiled windoesing config, that combines some of the best of Gnome (pretty) with the efficiency (application screen real estate) of i3/sway. The first stage of this is to collect the bits we need, starting with the <a href="https://mplus-fonts.osdn.jp/">M+</a> font collection:</p>
+</code></pre></div><p>Then with Gnome Tweak Tool, we can set this to be the wallpaper for both the desktop and lock screen. You need to use Tweak Tool (or the CLI command I keep forgetting) to do this, so you can set the image to span the monitors rather than be scaled on each of them. While we are in Tweak Tool, we might as well clean up a few other things, first let's ditch the background logo extension, and kill virtually all the other fluff that's enabled by default.</p>
+<p>Once things have been stripped back a bit, we can move onto more drastic changes to get us a tiled windowing config, that combines some of the best of Gnome (pretty) with the efficiency (application screen real estate) of i3/sway. The first stage of this is to collect the bits we need, starting with the <a href="https://mplus-fonts.osdn.jp/">M+</a> font collection:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">curl -sSL -o /tmp/mplus.tar.xz <span style="color:#e6db74">&#34;https://osdn.net/frs/redir.php?m=pumath&amp;f=mplus-fonts%2F62344%2Fmplus-TESTFLIGHT-063a.tar.xz&#34;</span>
 mkdir -p /tmp/mplus-fonts
 tar -xJf /tmp/mplus.tar.xz -C /tmp/mplus-fonts --strip<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
@@ -152,13 +152,13 @@ cd ~/Development/Source/github.com/nana-4/materia-theme
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">mkdir -p ~/Development/Source/github.com/PapyElGringo
 git clone https://github.com/PapyElGringo/material-shell.git ~/Development/Source/github.com/PapyElGringo/material-shell
 ln -s ~/Development/Source/github.com/PapyElGringo/material-shell ~/.local/share/gnome-shell/extensions/material-shell@papyelgringo
-</code></pre></div><p>Once we have all these in place, in Tweek Tool, we can enable loading shell themes from the users home directory, then logout and back in.</p>
+</code></pre></div><p>Once we have all these in place, in Tweek Tool, we can enable loading shell themes from the user's home directory, then logout and back in.</p>
 <p>After logging back in its time to do some clicking:</p>
 <ul>
-<li>Set all system fonts to M+ with medium weight, and a 9.75 point size, I also like setting subpixel rendering and medium hinting whist I'm here.</li>
+<li>Set all system fonts to M+ with medium weight, and a 9.75 point size, I also like setting subpixel rendering and medium hinting while I'm here.</li>
 <li>Set the application theme to <code>Materia-light-compact</code></li>
 <li>In Chrome load the <code>Materia-light-compact</code> theme via the extensions (<code>chrome://extensions</code>) page</li>
-<li>Enable the <code>Material Shell</code> extension in Tweak Tool, then select the light theme and a highlight color of your choosing.</li>
+<li>Enable the <code>Material Shell</code> extension in Tweak Tool, then select the light theme and highlight color of your choosing.</li>
 </ul>
 <p>Once thats done, sit back and relax, Silverblue is pretty cool.</p>
 <h2 id="obligatory-picture">Obligatory picture</h2>

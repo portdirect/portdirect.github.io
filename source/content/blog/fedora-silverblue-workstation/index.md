@@ -4,10 +4,10 @@ date: 2019-12-25T00:14:02Z
 draft: False
 ---
 
-Fedora Silverblue is pretty nice, but out of the box lacks some of the tools I tend to use. Though in many cases flatpak, or the Fedora Toolbox container, lets you deploy applications without effecting the underlying distrobution, a few things fall outside of their scope/capabilities. The following is how I install Chrome, VSCode, Cockpit, and also customise Gnome to my liking:
+Fedora Silverblue is pretty lovely, but out of the box lacks some of the tools I tend to use. Though in many cases, flatpak, or the Fedora Toolbox container, lets you deploy applications without effecting the underlying distribution, a few things fall outside of their scope/capabilities. The following is how I install Chrome, VSCode, Cockpit, and also customize Gnome to my liking:
 
 ### Add additional repos
-Adding new rpm repos to rpm-ostree is pretty simple for layering new packages:
+Adding additional rpm repos to rpm-ostree is pretty simple if all we are doing is layering some new packages:
 ```shell
 sudo tee /etc/yum.repos.d/vscode.repo << 'EOF'
 [code]
@@ -44,7 +44,7 @@ EOF
 ```
 
 ### Install packages
-Next we install the packages we need, and finish off with a reboot to allow us to to start with the new commit.
+Next, we install the packages we need and finish off with a reboot to allow us to start with the new commit.
 
 ```shell
 rpm-ostree install --idempotent \
@@ -65,7 +65,7 @@ rpm-ostree install --idempotent \
 systemctl reboot
 ```
 
-Once we are back we can enable, and start, the cockpit webserver, and open the required ports:
+Once we are back we can enable, and start, the cockpit web server, and open the required ports:
 ```shell
 sudo systemctl enable --now cockpit.socket
 sudo firewall-cmd --add-service=cockpit
@@ -73,16 +73,16 @@ sudo firewall-cmd --add-service=cockpit --permanent
 ```
 
 ### Theme Gnome
-Ok, with the practicalities out of the way, lets get a pretty desktop picture that spans the two monitors I'm using:
+Ok, with the practicalities out of the way, let's get a pretty desktop picture that spans the two monitors I'm using:
 ```shell
 mkdir -p ~/Pictures/Wallpapers
 curl -sSL -o ~/Pictures/Wallpapers/yosemite.jpg https://binaryfortressdownloads.com/Download/WPF/Images/21505/WallpaperFusion-yosemite-5120x1440.jpg
 ```
 
-Then with Gnome Tweak Tool, we can set this to be the the wallpaper for both the desktop, and lock screen. You need to use Tweak Tool (or the cli command I keep forgetting) to do this, so you can set the image to span the monitors, rather than be scaled on each of them. While we are in Tweak Tool, we might was well clean up a few other things, first lets ditch the background logo extension, and kill virtually all the other fluff thats enabled by default.
+Then with Gnome Tweak Tool, we can set this to be the wallpaper for both the desktop and lock screen. You need to use Tweak Tool (or the CLI command I keep forgetting) to do this, so you can set the image to span the monitors rather than be scaled on each of them. While we are in Tweak Tool, we might as well clean up a few other things, first let's ditch the background logo extension, and kill virtually all the other fluff that's enabled by default.
 
 
-Once things are stipped back a bit, we can move onto more drastic changes to get us a tiled windoesing config, that combines some of the best of Gnome (pretty) with the efficiency (application screen real estate) of i3/sway. The first stage of this is to collect the bits we need, starting with the [M+](https://mplus-fonts.osdn.jp/) font collection:
+Once things have been stripped back a bit, we can move onto more drastic changes to get us a tiled windowing config, that combines some of the best of Gnome (pretty) with the efficiency (application screen real estate) of i3/sway. The first stage of this is to collect the bits we need, starting with the [M+](https://mplus-fonts.osdn.jp/) font collection:
 
 ```shell
 curl -sSL -o /tmp/mplus.tar.xz "https://osdn.net/frs/redir.php?m=pumath&f=mplus-fonts%2F62344%2Fmplus-TESTFLIGHT-063a.tar.xz"
@@ -111,13 +111,13 @@ git clone https://github.com/PapyElGringo/material-shell.git ~/Development/Sourc
 ln -s ~/Development/Source/github.com/PapyElGringo/material-shell ~/.local/share/gnome-shell/extensions/material-shell@papyelgringo
 ```
 
-Once we have all these in place, in Tweek Tool, we can enable loading shell themes from the users home directory, then logout and back in.
+Once we have all these in place, in Tweek Tool, we can enable loading shell themes from the user's home directory, then logout and back in.
 
 After logging back in its time to do some clicking:
- * Set all system fonts to M+ with medium weight, and a 9.75 point size, I also like setting subpixel rendering and medium hinting whist I'm here.
+ * Set all system fonts to M+ with medium weight, and a 9.75 point size, I also like setting subpixel rendering and medium hinting while I'm here.
  * Set the application theme to `Materia-light-compact`
  * In Chrome load the `Materia-light-compact` theme via the extensions (`chrome://extensions`) page
- * Enable the `Material Shell` extension in Tweak Tool, then select the light theme and a highlight color of your choosing.
+ * Enable the `Material Shell` extension in Tweak Tool, then select the light theme and highlight color of your choosing.
 
  Once thats done, sit back and relax, Silverblue is pretty cool.
 
