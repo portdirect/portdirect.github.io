@@ -16,6 +16,17 @@ build:
 		docker.io/port/hugo:latest \
 			hugo --destination ../
 
+terminal:
+	@echo "Running interactive terminal"
+	podman run --rm \
+		-it \
+		--read-only \
+		--net host \
+		--volume ../:/src/site:Z,rw \
+		--workdir /src/site/source \
+		docker.io/port/hugo:latest \
+			bash
+
 devel:
 	@echo "Running local development server"
 	podman run --rm \

@@ -6,10 +6,20 @@
     <description>Recent content on port.direct</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Nov 2019 15:13:39 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 25 Dec 2019 00:14:02 +0000</lastBuildDate>
     
 	<atom:link href="https://port.direct/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Fedora Silverblue Workstation</title>
+      <link>https://port.direct/blog/fedora-silverblue-workstation/</link>
+      <pubDate>Wed, 25 Dec 2019 00:14:02 +0000</pubDate>
+      
+      <guid>https://port.direct/blog/fedora-silverblue-workstation/</guid>
+      <description>Fedora Silverblue is pretty nice, but out of the box lacks some of the tools I tend to use. Though in many cases flatpak, or the Fedora Toolbox container, lets you deploy applications without effecting the underlying distrobution, a few things fall outside of their scope/capabilities. The following is how I get Chrome, VSCode, Cockpit, and also customise Gnome to my liking:
+Add additional repos Adding new rpm repos to rpm-ostree is pretty simple for layering new packages:</description>
+    </item>
     
     <item>
       <title>Linux on the 17&#34; MacBook Pro 8.3</title>
