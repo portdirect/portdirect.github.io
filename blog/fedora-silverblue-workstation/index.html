@@ -35,7 +35,7 @@ Add additional repos Adding new rpm repos to rpm-ostree is pretty simple for lay
 Add additional repos Adding new rpm repos to rpm-ostree is pretty simple for layering new packages:">
 <meta itemprop="datePublished" content="2019-12-25T00:14:02&#43;00:00" />
 <meta itemprop="dateModified" content="2019-12-25T00:14:02&#43;00:00" />
-<meta itemprop="wordCount" content="567">
+<meta itemprop="wordCount" content="569">
 
 
 
@@ -123,7 +123,8 @@ sudo tee /etc/yum.repos.d/cockpit-preview.repo <span style="color:#e6db74">&lt;&
 </span><span style="color:#ae81ff"></span>    cockpit-machines <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>    cockpit-podman <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>    code <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    google-chrome-stable
+</span><span style="color:#ae81ff"></span>    google-chrome-stable <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    make
 systemctl reboot
 </code></pre></div><p>Once we are back we can enable, and start, the cockpit webserver, and open the required ports:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo systemctl enable --now cockpit.socket

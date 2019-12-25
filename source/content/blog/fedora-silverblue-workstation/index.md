@@ -60,7 +60,8 @@ rpm-ostree install --idempotent \
     cockpit-machines \
     cockpit-podman \
     code \
-    google-chrome-stable
+    google-chrome-stable \
+    make
 systemctl reboot
 ```
 
